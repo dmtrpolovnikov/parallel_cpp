@@ -106,7 +106,7 @@ double start_exp (
     //     std::cout << std::endl;
     // }
 
-    omp_set_num_threads(72);
+    omp_set_num_threads(4);
     std::uint64_t path_num{};
     double payoff = 0;
 
