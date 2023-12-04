@@ -167,7 +167,7 @@ int main(int argc, char *argv[])
     int paths = 10'000;
     int path_len = 1000;
 
-    std::uint8_t loop_num = 5;
+    std::uint8_t loop_num = 100;
 
     float global_elapsed_seconds;
     auto global_start = std::chrono::system_clock::now();
