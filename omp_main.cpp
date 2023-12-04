@@ -172,7 +172,7 @@ int main(int argc, char *argv[])
     float global_elapsed_seconds;
     auto global_start = std::chrono::system_clock::now();
 
-    for (int r = 0; r < 6; r++)
+    for (int r = 0; r < 101; r++)
     {
         float inner_seconds;
         float seconds_record[1] {0.};
