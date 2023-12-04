@@ -106,7 +106,7 @@ double start_exp (
     //     std::cout << std::endl;
     // }
 
-    omp_set_num_threads(4);
+    omp_set_num_threads(72);
     std::uint64_t path_num{};
     double payoff = 0;
 
@@ -167,12 +167,12 @@ int main(int argc, char *argv[])
     int paths = 10'000;
     int path_len = 1000;
 
-    std::uint8_t loop_num = 5;
+    std::uint8_t loop_num = 100;
 
     float global_elapsed_seconds;
     auto global_start = std::chrono::system_clock::now();
 
-    for (int r = 0; r < 101; r++)
+    for (int r = 0; r < 6; r++)
     {
         float inner_seconds;
         float seconds_record[1] {0.};
